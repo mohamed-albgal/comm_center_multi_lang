@@ -18,11 +18,12 @@ export default () => {
 		{languages.map( language => {
 			return (
 				<li key={language.code}>
-				<Link href={`/${language.code}/`} as={`/[lang]/`}>
-					<a>{language.name}</a>
-				</Link>
-			);
+					<Link href={`/${language.code}/`} >
+						<a>{language.name}</a>
+					</Link>
+				</li>
+			)
 		})}
 		</ul>
 	);
-};
+}

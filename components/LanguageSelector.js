@@ -18,7 +18,7 @@ export default () => {
 		{languages.map( language => {
 			return (
 				<li key={language.code}>
-					<Link href={`/${language.code}/`} >
+					<Link as={`/${language.code}/`} href={`/[lang]`}>
 						<a>{language.name}</a>
 					</Link>
 				</li>
